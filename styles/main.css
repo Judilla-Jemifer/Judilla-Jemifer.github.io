@@ -25,6 +25,12 @@ h2 {
     border-bottom: 1px solid #bbb;
 }
 
+nav {
+    font-size: 16px/* x.xrem */;
+    text-align: center;
+    border-bottom: 1px solid #bbb;
+}
+
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
