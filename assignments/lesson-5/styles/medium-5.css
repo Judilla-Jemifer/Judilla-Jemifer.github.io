@@ -8,3 +8,13 @@
   article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
 
 }
+li {
+    display: inline;
+}
+li a{
+    display: block;
+    padding: 8px;
+}
+ul {
+    background-color: #a0cfec;
+}

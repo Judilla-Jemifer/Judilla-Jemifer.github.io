@@ -4,3 +4,13 @@
   article p.town-article img { width: 29.333%; }
   
 }
+li {
+    display: inline;
+}
+li a{
+    display: block;
+    padding: 8px;
+}
+ul {
+    background-color: #a0cfec;
+}
