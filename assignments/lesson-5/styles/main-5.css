@@ -9,9 +9,12 @@ body {
 
 header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    text-align: center;
 }
 
+
 header {}
+}
 header h1 {}
 header img {}
 header .subheading {}
@@ -39,6 +42,9 @@ main figure img { width: 100%; }
 
 table {
     display: none;
+}
+h1 {
+    text-align: center;
 }
 h3 {
     display: none;
