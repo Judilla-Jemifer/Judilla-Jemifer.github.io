@@ -16,10 +16,18 @@ header h1 {}
 header img {}
 header .subheading {}
 
-nav {}
-nav button {}
-nav ul {}
-nav ul li {}
+nav {
+    
+}
+nav button {
+    display: block;
+}
+nav ul { 
+    display: none;
+}
+nav ul li {
+  
+}
 nav ul li a {}
 nav ul li.active a {}
 nav ul li a:hover {}
@@ -28,6 +36,13 @@ main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
+
+table {
+    display: none;
+}
+h3 {
+    display: none;
+}
 
 section {}
 
