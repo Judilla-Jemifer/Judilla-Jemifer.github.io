@@ -102,8 +102,8 @@ article p.town-article img {  /* This structure refers to img elements that are 
   margin-bottom: 5%;
 }
 //---------------------------------footer---------------------------------
-footer {
-   font-size: 10px;
+footer  {
+     
 }
 footer aside {
    clear: both;
@@ -111,9 +111,23 @@ footer aside {
     
 }
 footer aside p {
-    margin: 0;
+    margin:0;
+    font-size: 11px;
+    background-color: #a0cfec;
+    padding: 2px;
+    
+
    
 } /* This structure refers to p elements that are direct children of the footer element */
+
+footer p.footer-bar {
+    font-size: 11px;
+    text-align: center;
+    background-color: #000080;
+    color: whitesmoke;
+    padding: 9px;
+    margin: 0;
+}
 
 //------------clearfix-----------------------------------
 .clearfix:after {
