@@ -1,0 +1,26 @@
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here
+*/
+    
+li {
+    display: inline;
+}
+li a{
+     display: block;
+    padding: 8px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Arial
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #a0cfec;
+}
+  
+  article p.town-article img { width: 29.333%; }
+  
+}

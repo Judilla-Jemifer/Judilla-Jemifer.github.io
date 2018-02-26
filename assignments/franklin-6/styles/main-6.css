@@ -14,15 +14,17 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     
 }
 
-
-header {}
+//-----------------------header-----------------------------
+header {
+    margin-bottom: 2%;
+}
 }
 header h1 {
 
 }
 header img {}
 header .subheading {}
-
+//-------------------------nav----------------------------------
 nav {
     
 }
@@ -39,7 +41,7 @@ nav ul li {
 nav ul li a {}
 nav ul li.active a {}
 nav ul li a:hover {}
-
+//----------------------------main------------------------------
 main {}
 main h2 {}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
@@ -98,7 +100,7 @@ article p.town-article img {  /* This structure refers to img elements that are 
   margin-right: 5%;
   margin-bottom: 5%;
 }
-
+//---------------------------------footer---------------------------------
 footer {
    font-size: 10px;
 }
@@ -112,4 +114,10 @@ footer aside p {
    
 } /* This structure refers to p elements that are direct children of the footer element */
 
-/* Other Class Selectors */
+//------------clearfix-----------------------------------
+.clearfix:after {
+    context: "";
+    display: table;
+    clear: both;
+}
+}
