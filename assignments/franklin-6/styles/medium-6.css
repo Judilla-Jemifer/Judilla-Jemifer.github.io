@@ -1,45 +1,43 @@
 @media only screen and (min-width: 37.5em) {
   /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
   
-  nav button { 
+nav button { 
       display:none; 
     }  /* hamburger button does not need to be shown */
-    
-    nav {
-        display: block;
-        margin-bottom: 2%;
-        margin-top: 2%;
-    }
+
+nav {
+    background-color: #a0cfec;
+    margin-bottom: 2%;
+}
+ 
+nav ul {
+    overflow: hidden;    
+    background-color: #a0cfec;
+    margin-left: 2%;  
+}
+
+nav ul li {
+    float: left;
+   
+}
   
-    nav ul {
-        display: block;
-    }
+nav ul li a {
+    border: none;
+    padding: 0.8rem 1rem;
+}
+  
+     
+nav ul.hide {
+    display: block;
+} 
+  
+
+    
   section.forecast { 
       display: block; 
     }  /* show the 10-day forecast with the medium view and up */
 
 
-    
-li {
-    display: inline;
-    float: left;
-}
-li a{
-    display: block;
-    padding: 8px;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-   
-}
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #a0cfec;
-}
 .forecast {
     display: block;
     width: 50%;

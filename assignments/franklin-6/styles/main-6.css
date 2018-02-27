@@ -14,33 +14,46 @@ header, nav, main, footer { /* the comma means apply the following CSS declarati
     
 }
 
-//-----------------------header-----------------------------
 header {
     margin-bottom: 2%;
 }
-}
-header h1 {
 
-}
-header img {}
-header .subheading {}
 //-------------------------nav----------------------------------
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    float: right;
+   
+}
+
 nav {
     
+    margin-bottom: 2%;
 }
-nav button {
-    display: block;
-    float: right;
-}
+
 nav ul { 
-    display: none;
+    background-color: #a0cfec;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   
 }
-nav ul li {
-  
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #000;
+    border-top:1px solid rgba(0,0,0,0.3);
+    
 }
-nav ul li a {}
-nav ul li.active a {}
-nav ul li a:hover {}
+nav ul li.active a {background-color: #fff}
+nav ul li a:hover {background-color: #2980B9; color: #fff}
+
+nav ul.hide {display: none;}
 
 //----------------------------main------------------------------
 main {}
@@ -131,7 +144,7 @@ footer p.footer-bar {
 
 //------------clearfix-----------------------------------
 .clearfix:after {
-    context: "";
+    content: "";
     display: table;
     clear: both;
 }
