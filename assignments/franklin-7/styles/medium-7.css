@@ -32,14 +32,21 @@ nav ul.hide {
 } 
 
 
+
+
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
-    
-}
+    margin-left: 2%;
+     margin-right: 5%;
+    margin-bottom: 5%;
+    }
 
-
+ .grid img:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
   
   section.forecast { 
       display: block; 
