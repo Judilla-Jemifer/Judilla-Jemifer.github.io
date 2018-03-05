@@ -44,9 +44,7 @@ nav ul.hide {
     margin-bottom: 5%;
     }
 
- .grid img:hover {
-        box-shadow: 5px 5px 10px gray;
-    }
+ 
   
   section.forecast { 
       display: block; 
