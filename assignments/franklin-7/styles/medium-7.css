@@ -30,9 +30,17 @@ nav ul li a {
 nav ul.hide {
     display: block;
 } 
-  
 
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
     
+}
+
+
+  
   section.forecast { 
       display: block; 
     }  /* show the 10-day forecast with the medium view and up */

@@ -56,8 +56,7 @@ nav ul li a:hover {background-color: #2980B9; color: #fff}
 nav ul.hide {display: none;}
 
 //----------------------------main------------------------------
-main {}
-main h2 {}
+
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
@@ -67,8 +66,7 @@ main figure img { width: 100%; }
 h1 {
     text-align: center;
 }
-.forecast {
-    display: none;
+
 }
 h3 {
     text-align: center;
@@ -98,7 +96,16 @@ picture {
 
 }
 
-section {}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    
+}
+
+
+
 
 .town-article {
     text-align: left;
