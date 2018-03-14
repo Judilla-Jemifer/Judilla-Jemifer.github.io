@@ -58,6 +58,17 @@ nav ul.hide {
     margin-right: 25%;
     
 }
+
+footer  {
+    position: absolute;
+   bottom: 0; 
+    bottom: 0;
+  left: 0;
+    text-align: center;
+    width: 100%;
+  
+}
+    
  footer aside {
    clear: both;
    margin-top: auto;
