@@ -35,32 +35,59 @@
   </nav>
     
   <main>
-      <h2>Storm Center</h2>
       
-      <div class="grid">
+<div id="content" class="clearfix">
+      <h3>Storm Center Registration</h3>
     
-          <div><img src="images/weather1.jpg" alt="Weather Image 1"><h3>Vad är Lorem Ipsum?</h3>	
-      <p>
-        Det är ett välkänt faktum att läsare distraheras av läsbar text på en sida när man skall studera layouten. Poängen med Lorem Ipsum är att det ger ett normalt ordflöde, till skillnad från "Text här, Text här", och ger intryck av att vara läsbar text. Många publiseringprogram och webbutvecklare använder Lorem Ipsum som test-text, och en sökning efter "Lorem Ipsum" avslöjar många webbsidor under uteckling. Olika versioner har dykt upp under åren, ibland av olyckshändelse, ibland med flit (mer eller mindre humoristiska).
-      </p></div>
-          <div><img src="images/weather1.jpg" alt="Weather Image 2"><h3>Var får jag tag i det?</h3>
-        <p>Det finns många olika varianter av Lorem Ipsum, men majoriteten av dessa har ändrats på någotvis. Antingen med inslag av humor, eller med inlägg av ord som knappast ser trovärdiga ut. Skall man använda långa stycken av Lorem Ipsum bör man försäkra sig om att det inte gömmer sig något pinsamt mitt i texten. Lorem Ipsum-generatorer på internet tenderar att repetera Lorem Ipsum-texten styckvis efter behov, något som gör denna sidan till den första riktiga Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformationer osv.
-        </p></div>
-          <div><img src="images/weather1.jpg" alt="Weather Image 3"><h3>Var får jag tag i det?</h3>
-        <p>Det finns många olika varianter av Lorem Ipsum, men majoriteten av dessa har ändrats på någotvis. Antingen med inslag av humor, eller med inlägg av ord som knappast ser trovärdiga ut. Skall man använda långa stycken av Lorem Ipsum bör man försäkra sig om att det inte gömmer sig något pinsamt mitt i texten. Lorem Ipsum-generatorer på internet tenderar att repetera Lorem Ipsum-texten styckvis efter behov, något som gör denna sidan till den första riktiga Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformationer osv.
-        </p></div>
-          <div><img src="images/weather1.jpg" alt="Weather Image 4"><h3>Var får jag tag i det?</h3>
-        <p>Det finns många olika varianter av Lorem Ipsum, men majoriteten av dessa har ändrats på någotvis. Antingen med inslag av humor, eller med inlägg av ord som knappast ser trovärdiga ut. Skall man använda långa stycken av Lorem Ipsum bör man försäkra sig om att det inte gömmer sig något pinsamt mitt i texten. Lorem Ipsum-generatorer på internet tenderar att repetera Lorem Ipsum-texten styckvis efter behov, något som gör denna sidan till den första riktiga Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformationer osv.
-        </p></div>
-          <div><img src="images/weather1.jpg" alt="Weather Image 5"><h3>Var får jag tag i det?</h3>
-        <p>Det finns många olika varianter av Lorem Ipsum, men majoriteten av dessa har ändrats på någotvis. Antingen med inslag av humor, eller med inlägg av ord som knappast ser trovärdiga ut. Skall man använda långa stycken av Lorem Ipsum bör man försäkra sig om att det inte gömmer sig något pinsamt mitt i texten. Lorem Ipsum-generatorer på internet tenderar att repetera Lorem Ipsum-texten styckvis efter behov, något som gör denna sidan till den första riktiga Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformationer osv.
-        </p></div>
-          <div><img src="images/weather1.jpg" alt="Weather Image 6"><h3>Var får jag tag i det?</h3>
-        <p>Det finns många olika varianter av Lorem Ipsum, men majoriteten av dessa har ändrats på någotvis. Antingen med inslag av humor, eller med inlägg av ord som knappast ser trovärdiga ut. Skall man använda långa stycken av Lorem Ipsum bör man försäkra sig om att det inte gömmer sig något pinsamt mitt i texten. Lorem Ipsum-generatorer på internet tenderar att repetera Lorem Ipsum-texten styckvis efter behov, något som gör denna sidan till den första riktiga Lorem Ipsum-generatorn på internet. Den använder ett ordförråd på över 200 ord, kombinerat med ett antal meningsbyggnadsstrukturer som tillsamman genererar Lorem Ipsum som ser ut som en normal mening. Lorem Ipsum genererad på denna sidan är därför alltid fri från repetitioner, humorinslag, märkliga ordformationer osv.
-        </p></div>
-    </div>
-      	  
-  
+    <div class="left">
+      </div>
+<form>
+<fieldset>
+    <legend><span>Please Tell Us About Yourself</span></legend>
+    <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z ]{5,99}" required ></label>
+    <label><span>Email:</span><input name="email" type="email" value="" placeholder="youremail@email.com"></label>
+    <label><span>Phone Number:</span><input name="phonenumber" type="tel" value="" required ></label>
+    <label><span>Zip Code:</span><input name="zipcode" type="number" value="" required ></label>
+</fieldset>
+<fieldset>
+     <legend><span>Information about the Storm</span></legend>
+    <label><span>Storm Date:</span><input name="stormdate" type="date" value=""></label>
+   <label><span>Storm Type:</span><input type="text" name="stormType" list="stormtypes"><datalist id="stormtypes">
+    <option value="Flash Flood"> </option>
+    <option value="Hail"> </option>
+    <option value="Hurricane"> </option>
+    <option value="Thunderstorm"> </option>
+    <option value="Tornado"> </option>
+    </datalist>
+    </label><br>
+    <label for="rating"><span>Storm Severity (1 to 10)</span></label>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span>
+   
+    <label><span>Storm Region</span>
+        <select>
+            <option selected="true" disabled="disabled">...</option>
+            <option value="Franklin">Franklin</option>
+            <option value="Greenville">Greenville</option>
+            <option value="Springfield">Springfield</option>
+        </select>
+    </label>
+    <label for="level"><span>Are the people affected in danger?</span>
+    </label>
+        <input type="radio" name="level" value="Yes">Yes<br>
+        <input type="radio" name="level" value="Maybe">Maybe<br>
+        <input type="radio" name="level" value="No">No<br>
+    <label><span>Additional information or comments:</span>
+    </label>
+        <textarea rows="7" cols="50" name="comment" form="usrform"></textarea><br>
+    
+      
+</fieldset> 
+   <input type="submit" value="Register the information" class="subtmitBtn">
+    <input name="redirect" type="hidden" value="thanks.html"> 
+</form>
+      </div>  	  
+      
   </main>
     
   <footer>
@@ -77,6 +104,7 @@
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
   <script src="scripts/windchill.js"></script>
+  <script src="scripts/adjustrating.js"></script>
 
 </body>
 </html>
