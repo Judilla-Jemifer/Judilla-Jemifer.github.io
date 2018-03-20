@@ -1,6 +1,7 @@
 var weatherObject = new XMLHttpRequest();
 
-weatherObject.open('GET','http://api.wunderground.com/api/165cc85ef4b7a66b/conditions/q/MN/Franklin.json', true);
+weatherObject.open('GET','http://api.wunderground.com/api/165cc85ef4b7a66b/conditions/forecast/q/MN/Franklin.json', true);
+
 
 weatherObject.send();
 
@@ -10,6 +11,13 @@ weatherObject.onload = function() {
     console.log(weatherInfo);
     
     document.getElementById('place').innerHTML = weatherInfo.current_observation.display_location.full;
-     document.getElementById('currentTemp').innerHTML
+    document.getElementById('currentWeather').innerHTML = weatherInfo.current_observation.weather;
+     document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.temp_f;
+    document.getElementById('currentSpeed').innerHTML = weatherInfo.current_observation.wind_mph;
+    document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
+     document.getElementById('textForecast').innerHTML = weatherInfo.current_observation.forecast.txt_forecast.fcttext;
+    
     
 } //end of onload
+
+
