@@ -59,7 +59,11 @@ nav ul.hide {
     
 }
 
+section article {
+  width: 50%;
+  float: left;
 
+}
     
 footer  {
     position: relative;
