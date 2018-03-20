@@ -59,10 +59,13 @@ nav ul.hide {
     
 }
 
+
+    
 footer  {
-    position: relative; 
+    position: relative;
+    right: 0;
     bottom: 0;
-    width: 100%;
+    left: 0;
     text-align: center;
  
   
