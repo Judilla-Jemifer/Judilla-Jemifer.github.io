@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="stormcenter" content="width=device-width, initial-scale=1">
+  <title>The Storm Center of the City Weather Site</title>
+  <meta name="Jemifer J Student" content="Storm Center of City Weather Site">
+  
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head> 
+<body>
+
+  <header class="clearfix">
+    <img src="http://home.bt.com/images/glastonbury-sunshine-rain-136418771241302601" alt="The site logo" width="200" height="80">
+    <h1>The City Weather Site</h1>
+    <div class="subheading">Giving you weather updates that you need </div>
+  </header>
+ 
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="#Home">Home</a></li>
+    	<li><a href="franklin.html">Franklin</a></li>
+    	<li><a href="#Greenville">Greenville</a></li>
+    	<li><a href="#Springfield">Springfield</a></li>
+    	<li class="active"><a href="#StormCenter">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      
+<div id="content" class="clearfix">
+      <h3>Storm Center Registration</h3>
+    
+    <div class="left">
+      </div>
+<form>
+<fieldset>
+    <legend><span>Please Tell Us About Yourself</span></legend>
+    <label><span>Full Name:</span><input name="fullname" type="text" value="" pattern="[a-zA-Z ]{5,99}" required ></label>
+    <label><span>Email:</span><input name="email" type="email" value="" placeholder="youremail@email.com"></label>
+    <label><span>Phone Number:</span><input name="phonenumber" type="tel" value="" required ></label>
+    <label><span>Zip Code:</span><input name="zipcode" type="number" value="" required ></label>
+</fieldset>
+<fieldset>
+     <legend><span>Information about the Storm</span></legend>
+    <label><span>Storm Date:</span><input name="stormdate" type="date" value=""></label>
+   <label><span>Storm Type:</span><input type="text" name="stormType" list="stormtypes"><datalist id="stormtypes">
+    <option value="Flash Flood"> </option>
+    <option value="Hail"> </option>
+    <option value="Hurricane"> </option>
+    <option value="Thunderstorm"> </option>
+    <option value="Tornado"> </option>
+    </datalist>
+    </label><br>
+    <label for="rating"><span>Storm Severity (1 to 10)</span></label>
+		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<span id="ratingvalue">5</span>
+   
+    <label><span>Storm Region</span>
+        <select>
+            <option selected="true" disabled="disabled">...</option>
+            <option value="Franklin">Franklin</option>
+            <option value="Greenville">Greenville</option>
+            <option value="Springfield">Springfield</option>
+        </select>
+    </label>
+    <label for="level"><span>Are the people affected in danger?</span>
+    </label>
+        <input type="radio" name="level" value="Yes">Yes<br>
+        <input type="radio" name="level" value="Maybe">Maybe<br>
+        <input type="radio" name="level" value="No">No<br>
+    <label><span>Additional information or comments:</span>
+    </label>
+        <textarea rows="7" cols="50" name="comment" form="usrform"></textarea><br>
+    
+      
+</fieldset> 
+   <input type="submit" value="Register the information" class="subtmitBtn" formaction="thanks.html">
+    
+</form>
+      </div>  	  
+      
+  </main>
+    
+  <footer>
+    <aside>
+      <p> The City Weather</p>
+      <p> 123 Main St.</p>
+        <p> Franklin, MU 83454</p>
+        <p> (208) 294.3952 </p>
+        <p> thecityweather@weather.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The City Weather | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+  <script src="scripts/adjustrating.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="thankyoupage" content="width=device-width, initial-scale=1">
+  <title>The City Weather Site</title>
+  <meta name="Jemifer J Student" content="City Weather Site">
+
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+</head> 
+<body>
+
+  <header class="clearfix">
+    <img src="http://home.bt.com/images/glastonbury-sunshine-rain-136418771241302601" alt="The site logo" width="200" height="80">
+    <h1>The City Weather Site</h1>
+    <div class="subheading">Giving you weather updates that you need </div>
+  </header>
+ 
+  <!-- site navigation use placeholder references -->
+  <nav class="clearfix">
+    <button onclick="toggleNavMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+    	<li><a href="#Home">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#Greenville">Greenville</a></li>
+    	<li><a href="#Springfield">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+    </ul>		
+  </nav>
+    
+  <main>
+      
+      <h3>Thank you for the information!</h3> 
+        	  
+  
+  </main>
+    
+  <footer>
+    <aside>
+      <p> The City Weather</p>
+      <p> 123 Main St.</p>
+        <p> Franklin, MU 83454</p>
+        <p> (208) 294.3952 </p>
+        <p> thecityweather@weather.com</p>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The City Weather | <span id="currentdate"></span></p>
+  </footer>
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+
+</body>
+</html>
