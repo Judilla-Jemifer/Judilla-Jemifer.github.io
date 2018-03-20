@@ -15,6 +15,9 @@
      var towns = jsonObj['towns'];
      
      for(var i = 0; i<towns.length; i++) {
+          if(i===2){
+              continue;
+          }
          var myArticle = document.createElement('article');
          var cityName = document.createElement('h2');
          var cityMotto = document.createElement('p');
