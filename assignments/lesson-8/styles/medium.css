@@ -60,18 +60,17 @@ nav ul.hide {
 }
 
 footer  {
-    position: absolute;
-   bottom: 0; 
+    position: relative; 
     bottom: 0;
-  left: 0;
-    text-align: center;
     width: 100%;
+    text-align: center;
+ 
   
 }
     
  footer aside {
    clear: both;
-   margin-top: auto;
+   margin-top: 2%;
 }
 
 
