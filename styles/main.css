@@ -31,6 +31,10 @@ nav {
     border-bottom: 1px solid #bbb;
 }
 
+ul {
+  list-style-type: none;
+}
+
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
