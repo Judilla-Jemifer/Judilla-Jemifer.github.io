@@ -8,7 +8,7 @@ body {
     
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+header, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -25,19 +25,27 @@ header {
 
 
 //-------------------------nav----------------------------------
+
+.wrapbutton {
+    overflow: hidden;
+}
 nav button {
+    float: right;
     margin: .2rem 2%;
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color: white;
-    float: right;
+    color:darkblue;
+   
+    
    
 }
 
 nav {
     
     margin-bottom: 2%;
+    font-family: 'Roboto', sans-serif;
+    
 }
 
 nav ul { 
@@ -63,8 +71,9 @@ nav ul.hide {display: none;}
 
 //----------------------------main------------------------------
 
+
 main figure { margin: 0 0 .2rem 2%; width:50%; }
-main figure img { width: 80%;;}
+main figure img { width: 80%;}
 
 .forecast {
     display: none;
