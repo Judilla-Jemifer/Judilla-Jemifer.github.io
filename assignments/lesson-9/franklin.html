@@ -25,7 +25,7 @@
   <nav class="clearfix">
     <button onclick="toggleNavMenu()">&#9776;</button>
     <ul id="primaryNav" class="hide">
-    	<li><a href="index.html">Home</a></li>
+    	<li><a href="#Home">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
     	<li><a href="#Greenville">Greenville</a></li>
     	<li><a href="#Springfield">Springfield</a></li>
@@ -41,18 +41,15 @@
                    images/Franklinmedium.jpeg 800w, 
                    images/Franklinlarge.jpeg 1100w">
     </figure>
-   
+    <h2>Franklin</h2>
     
     <section>
-      <h2>Weather Conditions for <span id="place"> City, State</span></h2>
-        <div>
-     <p> Current Weather: <span id="currentWeather">Partly Cloudy</span></p>
-     <p> Current Temperature is <span id="currentTemp">90</span>&deg;F</p>
-     <p> Current Wind Speed in miles per hour is <span id="currentSpeed">20.0</span>mph</p>
-     <img id="w_icon" src="" alt="current weather">
-     <p> Forecast for the most current period: <span id="textForecast">Partly cloudy</span></p>
-        
-        
+      <h3>Weather Summary</h3> 
+        <div class="current">
+        Sunny
+        <picture>
+            <img src="images/sun.jpg" alt="Sun Picture" width="100" height="60">
+        </picture>
       </div> 
       <div class="highlow">
         <p>High: <span id="high">90</span> &deg;F</p>  
@@ -61,8 +58,8 @@
         
       <div class="conditions">
         <p>Precipitation: 0%</p>  
-    
-        <p>Wind Chill Temperature: <span id="windChill">20</span> &deg;F</p> 
+        <p>Wind Speed: <span id="windSpeed">5</span> mpg SW</p> 
+        <p>Wind Chill Temperature: <span id="windChill"></span> &deg;F</p> 
       </div> 
        
       
@@ -122,11 +119,10 @@
     </aside>
     <p class="footer-bar">&copy;2018 All Rights Reserved | The City Weather | <span id="currentdate"></span></p>
   </footer>
-  <script src="scripts/wu-weather.js"></script>
-  <script src="scripts/windchill.js"></script>
+
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
-  
+  <script src="scripts/windchill.js"></script>
 
 </body>
 </html>
