@@ -33,7 +33,7 @@ nav button {
     float: right;
     margin: .2rem 2%;
     background-color: transparent;
-    border: none;
+    border-bottom: 2%;
     font-size: 1.6rem;
     color:darkblue;
    
