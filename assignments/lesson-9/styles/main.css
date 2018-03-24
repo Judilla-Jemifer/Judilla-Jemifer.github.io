@@ -36,7 +36,7 @@ nav {
 }
 
 nav ul { 
-    background-color: #E3E4FA;
+    background-color: #a0cfec;
     list-style-type: none;
     padding: 0;
     margin: 0;
@@ -240,7 +240,7 @@ footer aside p {
 footer p.footer-bar {
     font-size: 11px;
     text-align: center;
-    background-color: #000080;
+    background-color: #2980B9;
     color: whitesmoke;
     padding: 9px;
     margin: 0;
