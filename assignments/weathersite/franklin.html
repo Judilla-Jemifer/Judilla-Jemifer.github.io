@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>The City Weather Site</title>
   <meta name="Jemifer J Student" content="City Weather Site">
-  <meta name="description" content="page description placeholder">
+  <meta name="Franklin, MN weather information" content="This page contains the real time weather update for the city of Franklin in Minnesota">
   <!-- external style references in the proper cascading order -->    
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  <!-- Google API font reference -->
   <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
@@ -17,7 +17,7 @@
 <body>
 
   <header class="clearfix">
-    <img src=images/logo.png alt="The City Weather Site logo" width="200" height="200">
+    <img src=images/logo.png alt="The City Weather Site logo" width="100" height="100">
     <h1>The City Weather Site</h1>
     <div class="subheading">Giving you weather updates that you need  real time</div>
   </header>
@@ -28,14 +28,15 @@
     <ul id="primaryNav" class="hide">
     	<li><a href="index.html">Home</a></li>
     	<li class="active"><a href="#">Franklin</a></li>
-    	<li><a href="#Greenville">Greenville</a></li>
-    	<li><a href="#Springfield">Springfield</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
     	<li><a href="stormcenter.html">Storm Center</a></li>
     	<li><a href="gallery.html">Gallery</a></li>
     </ul>		
   </nav>
     
   <main>
+
       <figure>
       <img src="images/Franklin0.jpeg" alt="Franklin City" 
            srcset="images/Franklinsmall.jpeg 500w, 
@@ -43,29 +44,32 @@
                    images/Franklinlarge.jpeg 1100w">
     </figure>
    
+     
     
     <section>
-      <h2>Weather Conditions for <span id="place"> City, State</span></h2>
-        <div>
-     <p> Current Weather: <span id="currentWeather">Partly Cloudy</span></p>
-     <p> Current Temperature is <span id="currentTemp">90</span>&deg;F</p>
-     <p> Current Wind Speed in miles per hour is <span id="currentSpeed">20.0</span>mph</p>
-     <img id="w_icon" src="" alt="current weather">
-     <p> Forecast for the most current period: <span id="textForecast">Partly cloudy</span></p>
+        <div class="highlight">
+      <h3>Weather Conditions for <span id="place"> City, State</span></h3>
+      <img id="w_icon" src="" alt="current weather">  
+     <p><strong> Current Weather:</strong> <span id="currentWeather">Partly Cloudy</span></p>
+     <p><strong> Current Temperature is </strong><span id="currentTemp">90</span>&nbsp;&deg;F</p>
+     <p><strong> Current Wind Speed in miles per hour is </strong><span id="currentSpeed">20</span>&nbsp;mph</p>
+     
+    <div class="middle">
+    <p><strong> Forecast for the most current period: </strong><br><span id="textForecast">Partly cloudy</span></p>
+    </div>
         
-        
-      </div> 
-      <div class="highlow">
-        <p>High: <span id="high">90</span> &deg;F</p>  
-        <p>Low: <span id="low">66</span> &deg;F</p>  
-      </div>
-        
-      <div class="conditions">
-        <p>Precipitation: 0%</p>  
+     
+        <p><strong>High: </strong><span id="high">90</span> &deg;F</p>  
+        <p><strong>Low: </strong><span id="low">66</span> &deg;F</p>  
     
-        <p>Wind Chill Temperature: <span id="windChill">20</span> &deg;F</p> 
-      </div> 
+        
+    
+        <p><strong>Precipitation: </strong><span id="precipitation">0</span>%</p>  
+    
+        <p><strong>Wind Chill Temperature: </strong><span id="windChill">20</span> &deg;F</p> 
+        </div>
        
+ 
       
     </section>
         
@@ -88,16 +92,16 @@
 		</thead>
         <tbody>  
           <tr>
-            <td>89&deg;F</td>
-            <td>87&deg;F</td>
-            <td>78&deg;F</td>
-            <td>75&deg;F</td>
-            <td>72&deg;F</td>
-            <td>72&deg;F</td>
-            <td>79&deg;F</td>
-            <td>83&deg;F</td>
-            <td>85&deg;F</td>
-            <td>89&deg;F</td>
+              <td><span id="dayone">89</span>&deg;F</td>
+              <td><span id="daytwo">87</span>&deg;F</td>
+              <td><span id="daythree">78</span>&deg;F</td>
+              <td><span id="dayfour">75</span>&deg;F</td>
+              <td><span id="dayfive">72</span>&deg;F</td>
+              <td><span id="daysix">72</span>&deg;F</td>
+              <td><span id="dayseven">79</span>&deg;F</td>
+              <td><span id="dayeight">83</span>&deg;F</td>
+              <td><span id="daynine">85</span>&deg;F</td>
+              <td><span id="dayten">89</span>&deg;F</td>
           </tr>
 		</tbody>
       </table>
@@ -107,7 +111,7 @@
       <h3>Franklin Breaks Record</h3>	
       <p class="town-article">
         <img src="images/hot.jpg" alt="Hottest Day" width="300" height="150">
-        For the first time in history, Franklin breaks record of its highest temperature at 90&deg;F. This is the hottest temperature ever recorded in the history of the city. As such, evveryone is being warned about the danger of heatwave and was advised to drink lots of water when outside.
+        For the first time in history, Franklin breaks record of its highest temperature at 90&deg;F. This is the hottest temperature ever recorded in the history of the city. As such, evveryone is being warned about the danger of heatwave and was advised to drink lots of water when outside. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
       </p>
 		</article>		  
   
@@ -124,7 +128,6 @@
     <p class="footer-bar">&copy;2018 All Rights Reserved | The City Weather | <span id="currentdate"></span></p>
   </footer>
   <script src="scripts/wu-weather.js"></script>
-  <script src="scripts/windchill.js"></script>
   <script src="scripts/hamburger.js"></script>
   <script src="scripts/currentdate.js"></script>
   

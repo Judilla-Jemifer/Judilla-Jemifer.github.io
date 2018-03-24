@@ -22,6 +22,8 @@ header {
     padding-bottom: 2%;
 }
 
+
+
 //-------------------------nav----------------------------------
 nav button {
     margin: .2rem 2%;
@@ -61,11 +63,16 @@ nav ul.hide {display: none;}
 
 //----------------------------main------------------------------
 
-main figure { margin: 0 0 .2rem 2%; width:96%; }
-main figure img { width: 100%; }
+main figure { margin: 0 0 .2rem 2%; width:50%; }
+main figure img { width: 80%;;}
 
 .forecast {
     display: none;
+}
+.middle {
+    margin-left: 10%;
+    margin-right: 10%;
+}
 }
 h1 {
     text-align: center;
@@ -114,7 +121,11 @@ picture {
 }
 
 
-
+article {
+    background-color: azure;
+    padding-top: 0.5%;
+    padding-bottom: 2%;
+}
 
 .town-article {
     text-align: left;
@@ -122,6 +133,9 @@ picture {
     margin-left: 5%;
     margin-right: 5%;
     font-size: 14px;
+  
+    
+   
 }
 
 article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
@@ -143,7 +157,8 @@ section article {
 
 
 section p {
-  margin: 5px 0;
+  margin-left: 5%;
+  margin-right: 5%;
   font-size: 14px;
    
   

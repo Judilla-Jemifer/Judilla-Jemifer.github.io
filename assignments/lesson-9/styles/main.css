@@ -64,6 +64,7 @@ nav ul.hide {display: none;}
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
+
 .forecast {
     display: none;
 }
@@ -143,7 +144,8 @@ section article {
 
 
 section p {
-  margin: 5px 0;
+   margin-left: 3%;
+    margin-right: 3%;
   font-size: 14px;
    
   
